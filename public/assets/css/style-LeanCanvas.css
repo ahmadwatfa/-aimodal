@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap);
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/public/assets/fonts/ArbFONTS-Tajawal-Regular-1.ttf')
+}
+
+html {
+    height: 100%;
+    display: -webkit-box;
+    /* For Safari */
+    display: -ms-flexbox;
+    /* For IE 10 */
+    display: flex;
+}
+
+* {
+    font-family: 'Tajawal';
+}
+
+body {
+    min-height: 100%;
+    background: #fff;
+    font-family: 'Tajawal';
+    margin: 0;
+    display: -webkit-box;
+    /* For Safari */
+    display: -ms-flexbox;
+    /* For IE 10 */
+    display: flex;
+}
+
+.page1 {
+    text-align: center;
+    height: 210mm;
+}
+
+h1 {
+    color: #f9aa1c;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 45px 0 15px 0;
+}
+
+.title1 {
+    font-size: 30px;
+    color: #413886;
+    margin: 0px 0 15px;
+}
+
+.title {
+    font-size: 50px;
+    color: #413886;
+}
+
+.jadwa-logo {
+    margin-top: 35px;
+    height: 80px;
+}
+
+.meta-data {
+    font-size: 20px;
+    /* color: #413783; */
+    color: #353535;
+    margin-bottom: 0;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.meta-data span {
+    font-size: 20px;
+    /* color: #413783; */
+    color: #303030;
+    margin-bottom: 0;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+@media print {
+    .content2 {
+        text-align: right;
+        /* padding-top: 15px; */
+    }
+    .content2 h1 {
+        color: #413783;
+        font-size: 50;
+    }
+    .list {
+        list-style-position: inherit;
+        direction: rtl;
+        list-style-image: url('/images/2ar.png');
+    }
+    li {
+        font-size: 30px;
+        color: darkblue;
+    }
+    .list1 {
+        font-size: 20px;
+        color: grey;
+        width: 880px;
+    }
+    .footer {
+        display: inline-flex;
+        direction: rtl;
+        float: right;
+        /* padding-right: 67px; */
+        font-size: 15px;
+        color: darkblue;
+        padding-top: 70px;
+        /* margin-top: -15px; */
+        /* position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; */
+    }
+    table {
+        width: 100%;
+        padding-top: 19px;
+        /* padding-bottom: 90px; */
+    }
+    .content-tabel {
+        text-align: right;
+        margin-top: -180px;
+        padding-right: 8px;
+    }
+    @media print {
+        td {
+            border: 1px solid #76767c;
+            border-collapse: collapse;
+            padding-top: 5px;
+        }
+        th {
+            padding-top: 5px;
+        }
+        th {
+            padding-bottom: 10px;
+        }
+        .title-tabel {
+            height: 35px;
+            color: #403784;
+            font-size: 17px;
+            background-color: #403784;
+            width: 20%;
+            text-align: -webkit-center;
+            padding-top: 10px;
+        }
+    }
+}
+
+@media print {
+    .title-tabel {
+        color: white;
+        background-color: #403784 !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+@media screen {
+    .title-tabel {
+        color: white;
+        background-color: #403784 !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+@media print {
+    @page {
+        size: A4 landscape;
+        size: 287mm 210mm;
+    }
+}
+
+@media print {
+    .content {
+        color: black;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .footer-tabel {
+        /* width: 100%; */
+        height: 40px;
+        color: #403784;
+        font-size: 17px;
+        background-color: #403784 !important;
+        padding-top: 20px;
+        width: 20%;
+        text-align: right;
+        /* border: 10px solid #403784; */
+        justify-content: right;
+        padding-bottom: 15px;
+    }
+    .p-b {
+        padding-top: 580px;
+    }
+    .incline-line {
+        width: 47%;
+        margin: auto;
+        margin-top: 32%;
+        margin-bottom: 5%;
+        transform: rotate(90deg);
+        border-color: purple;
+    }
+    .incline-line2 {
+        width: 59%;
+        margin: auto;
+        margin-top: 3%;
+        margin-bottom: 5%;
+        transform: rotate(0deg);
+        border-color: purple;
+    }
+    .last-page {
+        padding-top: 55px;
+        padding-left: 20px;
+        width: auto !important;
+        height: 500px;
+    }
+    .footer img {
+        padding: 5px
+    }
+    .footer {
+        display: inline-flex;
+        direction: rtl;
+        float: right;
+        /* padding-right: 67px; */
+        font-size: 15px;
+        color: darkblue;
+        margin-top: -20px;
+        /* position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%; */
+    }
+    .projname {
+        padding-right: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .pronum {
+        padding-right: 170px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .email {
+        padding-right: 100px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .sit {
+        padding-right: 100px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .m-t45 {
+        margin-top: -71px;
+    }
+    .m-t65 {
+        margin-top: -40px;
+    }
+    .mt-2 {
+        margin-top: 2px;
+    }
+    .mt-20 {
+        margin-top: -58px;
+    }
+}

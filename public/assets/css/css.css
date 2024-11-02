@@ -1,0 +1,256 @@
+@import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap);
+
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/public/assets/fonts/ArbFONTS-Tajawal-Regular-1.ttf')
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: #fff;
+  font-family: 'Tajawal';
+  margin: 0;
+}
+
+.page1 {
+  text-align: center;
+  height: 1200px;
+  padding-top: 70px;
+
+}
+
+h1 {
+  color: #f9aa1c;
+  font-size: 73px;
+  font-weight: 700;
+  margin: 45px 0 15px 0;
+}
+
+.title1 {
+  
+  font-size: 43px;
+  color: #413886;
+  margin: 41px 0 15px;
+
+}
+
+.title {
+  font-size: 50px;
+  color: #413886;
+}
+
+.jadwa-logo {
+ 
+  margin-top: 51px;
+  height: 95px;
+
+}
+
+.meta-data {
+  font-size: 20px;
+  /* color: #413783; */
+  color: #353535;
+  margin-bottom: 0;
+  margin: 21px 0;
+  font-weight: 400;
+}
+
+.meta-data span {
+  font-size: 20px;
+  /* color: #413783; */
+  color: #303030;
+  margin-bottom: 0;
+  margin: 5px 0;
+  font-weight: 600;
+}
+/* page2*/
+.page2{
+    height: 1200px;
+}
+
+/*page3*/
+.page3{
+    height: 1200px;
+    position: relative;
+
+}
+.p3-h2{
+  color: #413783;
+    text-align: center;
+    font-size: 40px;
+}
+.p3-h3{
+  color: #413783;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 200px;
+}
+.p3-p{
+  font-size: 22px;
+  padding-top: 20px;
+}
+.page3 li{
+font-size: 20px;
+}
+.left{
+    text-align: center;
+    padding-right: 577px;
+    padding-top: 70px;
+}
+.p3-h4{
+  color: #413783;
+  font-size: 16px;
+  font-weight: 600;
+}
+.p3-p2{
+  font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 130px;
+}
+
+
+
+/* page4*/
+.page4{
+    height: 1200px;
+    position: relative;
+}
+.p4-h2{
+  color: #413783;
+    text-align: center;
+    font-size: 40px;
+}
+.fot{
+  position: absolute;
+  bottom: 150px;
+
+}
+
+
+
+/* page5*/
+.page5{
+  height: 1200px;
+  position: relative;
+}
+.p5-h2{
+  color: #413783;
+    text-align: center;
+    font-size: 40px;
+}
+.fot5{
+  position: absolute;
+  bottom: 190px;
+
+}
+
+
+/*page 6*/
+.page6{
+  height: 1200px;
+  position: relative;
+}
+.p6-h2{
+  color: #413783;
+    text-align: center;
+    font-size: 40px;
+}
+.fot6{
+  position: absolute;
+  top: 900px;
+
+}
+
+
+/*page 7*/
+.page7{
+  height: 1200px;
+  position: relative;
+}
+.p7-h2{
+  color: #413783;
+    text-align: center;
+    font-size: 40px;
+}
+.fot7{
+  position: absolute;
+  top: 850px;
+
+}
+
+.last{
+    height: 170px;
+}
+.footer {
+  display: inline-flex;
+  direction: rtl;
+  float: right;
+  /* padding-right: 67px; */
+  font-size: 15px;
+  color: darkblue;
+  margin-top: -15px;
+  /* position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; */
+}
+
+
+.last-page {
+  padding-top: 55px;
+  padding-left: 20px;
+  width: auto !important;
+  height: 500px;
+}
+
+.footer img{
+    padding: 5px
+}
+.footer{
+    display: inline-flex;
+    direction: rtl;
+    float: right;
+    font-size: 15px;
+    color: darkblue;
+    
+    
+}
+
+.projname{
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+.pronum{
+    padding-right: 170px;
+    display: inline-flex;
+    align-items: center;
+}
+.email{
+    padding-right: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+.sit{
+    padding-right: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+.m-t45{
+    margin-top: -20px;
+}
+.m-t65{
+    margin-top: -65px;
+}
+
+
+
+
+

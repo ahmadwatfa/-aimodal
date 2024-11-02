@@ -1,0 +1,3 @@
+INFO:root:Fetching Google Trends data for keyword: гЎЏг г‘«жн
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): trends.google.com:443
+ERROR:root:Error fetching trends data for гЎЏг г‘«жн: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/explore/?geo=US (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B052ED0980>: Failed to resolve 'trends.google.com' ([Errno 11001] getaddrinfo failed)"))

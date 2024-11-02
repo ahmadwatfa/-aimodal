@@ -1,0 +1,480 @@
+/* @import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap);
+
+        @font-face {
+            font-family: 'Tajawal';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+  src: url('public/assets/fonts/ArbFONTS-Tajawal-Regular-1.ttf')
+} */
+
+@page {
+    header: page-header;
+    footer: page-footer;
+    box-decoration-break: clone;
+}
+
+@page :first {
+    footer: html_firstpagefooter;
+    display: none;
+    visibility: hidden;
+}
+
+@page :last-of-type {
+    footer: html_firstpagefooter;
+    display: none;
+    visibility: hidden;
+}
+
+@page {
+    sheet-size: 297mm 234mm;
+}
+
+html,
+body {
+    font-family: "tajawal";
+}
+
+hr {
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin-bottom: -2px;
+}
+
+* {
+    font-family: "tajawal";
+    direction: rtl;
+}
+
+.page1 {
+    box-decoration-break: clone;
+    page-break-after: always;
+}
+
+.content2 {
+    box-decoration-break: clone;
+    background-image: url("images/11-0١.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container-fluid {
+    /* box-decoration-break: clone; */
+    max-height: fit-content;
+}
+
+h1 {
+    color: #413886;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0 20px 0;
+}
+
+.content3 h1{
+    color:#413783;
+    font-size: 35px;
+}
+
+.tit-header {
+    color: #f9aa1c;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+.title1 {
+    font-size: 30px;
+    color: #413886;
+    margin: 0px 0 15px;
+}
+
+.jadwa-logo {
+    margin-top: 5px;
+    height: 80px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.meta-data {
+    font-size: 14px;
+    /* color: #413783; */
+    color: #353535;
+    margin-bottom: 0;
+    margin: 9px 0;
+    font-weight: 400;
+
+}
+
+.meta-data span {
+    font-size: 15px;
+    /* color: #413783; */
+    color: #303030;
+    margin-bottom: 0;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.table1 td {
+    border: 1px solid #cdcece;
+    border-collapse: collapse;
+    padding-top: 5px;
+
+}
+
+
+.title-tabel {
+    height: 40px;
+    color: rgb(17, 16, 16);
+    font-size: 15px;
+    background-color: #f5f5f5 !important;
+    width: 20%;
+    text-align: -webkit-center;
+
+}
+
+.head {
+    color: black;
+    font-size: 15px;
+    /* background-color: #f5f5f5 !important; */
+    position: fixed;
+    padding-bottom: 10px;
+}
+
+.canva-list {
+    font-size: 14px;
+    color: black;
+    text-align: justify;
+
+}
+
+.table-responsive {
+    border-radius: 8px;
+    border: 1px solid #cdcece;
+    border-collapse: collapse;
+    width: fit-content;
+    overflow: hidden;
+    margin-top: 280px;
+    background-image: url("images/11-0١.png");
+}
+
+table .table1 {
+    width: 96%;
+    padding: 10px ;
+    border-radius: 8px;
+    border: 1px solid #cdcece;
+    border-collapse: collapse;
+    width: fit-content;
+    overflow: hidden;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+.content-tabel {
+    text-align: right;
+    padding-right: 8px;
+}
+
+.content {
+    color: black;
+    font-size: 15px;
+
+}
+
+.content-tabel {
+    text-align: right;
+    padding-right: 8px;
+}
+
+.footer {
+    direction: rtl;
+    float: right;
+    font-size: 15px;
+    color: darkblue;
+    /* padding-top: 10px; */
+    margin-bottom: 0px;
+}
+
+
+.projname {
+    padding-right: 100px;
+
+}
+
+
+.sit {
+    padding-right: 230px;
+    display: inline-flex;
+
+}
+
+#bizcanvas {
+    /* border: 3px solid black; */
+    width: 100%;
+}
+
+#bizcanvas td {
+    vertical-align: top;
+    height: 260px;
+    width: 205px;
+    padding: 6px;
+    line-height: 25px;
+
+}
+
+
+#bizcanvas H4 {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#bizcanvas H5 {
+    font-weight: 700;
+    font-size: 0.7em;
+}
+
+#bizcanvas p {
+    font-weight: 300;
+    font-size: 0.8em;
+
+}
+
+.center {
+    /* padding-right: 20px; */
+    padding-bottom: 10px;
+    padding-top: -5px;
+    padding-right: -4px;
+}
+
+.pt-10 {
+    padding-bottom: 10px;
+    padding-top: -5px;
+    padding-right: -4px;
+}
+
+.info {
+    padding-top: -100px;
+    padding-left: 420px;
+    font-size: 23px;
+    color: #413886;
+    direction: ltr;
+}
+
+.last-page {
+    padding-top: -70px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-number {
+    width: 120%;
+    padding-top: -5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.h-200 {
+    height: 180px !important;
+}
+
+.logo {
+    float: left;
+    /* margin-top: 10px; */
+}
+
+.list-contact {
+    list-style-position: inherit;
+    direction: rtl;
+    width: 50%;
+    color: #413886;
+    list-style: none;
+}
+
+.item-contact {
+    padding: 8px;
+    font-size: 25px;
+    width: 700px;
+}
+
+.con {
+    margin-left: 6px;
+    margin-bottom: -5px;
+}
+
+/* .info-con {
+  padding-top: 60px;
+  padding-right: 200px;
+  font-size: 23px;
+  color: #413886;
+ direction: rtl;
+
+} */
+/* .info-con2 {
+  padding-top: -125px;
+  padding-right: 500px;
+  font-size: 23px;
+  color: #413886;
+ direction: rtl;
+} */
+
+.info-con {
+    padding-top: 100px;
+    padding-right: 150px;
+    font-size: 20px;
+    color: #413886;
+    direction: rtl;
+    height: 220px;
+}
+
+.info-con > div {
+    display: table;
+    direction: rtl;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.info-con img {
+    float: right;
+}
+
+.info-con img,
+.info-con a {
+    display: inline-block;
+}
+
+.info-con a {
+    float: left;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.info-con2 {
+    padding-top: -180px;
+    padding-right: 650px;
+    font-size: 23px;
+    color: #413886;
+    direction: rtl;
+    height: 170px;
+}
+
+.info-con55 td {
+    padding-bottom: 18px;
+}
+
+.foter-ico {
+    padding: 20px;
+    float: left;
+    margin: 6px;
+
+    position: relative;
+}
+
+.jadwa-logo2 {
+    margin-top: 35px;
+    height: 80px;
+    width: auto;
+    margin-left: 560px;
+    padding-right: -55px;
+
+}
+
+.footer2 {
+    direction: rtl;
+    float: right;
+    font-size: 15px;
+    color: darkblue;
+    padding-top: 190px;
+    margin-bottom: 0px;
+    position: fixed;
+
+}
+
+.img-fix {
+    max-height: 170px;
+
+}
+
+.footer-con {
+    direction: rtl;
+    float: right;
+    font-size: 15px;
+    color: darkblue;
+    /* padding-top: 10px; */
+    margin-bottom: 0px;
+}
+
+.m-b {
+    padding-top: -10px;
+    position: absolute;
+
+}
+
+.p-a {
+    position: fixed;
+}
+
+/*.table-row-style li,
+.table-row-style p,
+.canva-list {
+    font-size: 17px !important;
+}*/
+.page4 {
+    height: 260mm;
+    position: relative;
+    /* top: -250px; */
+    direction: initial;
+    box-decoration-break: clone;
+    page-break-after: always;
+
+}
+.p4-h2 {
+    color: #413783;
+    text-align: center;
+    font-size: 30px;
+    /* padding-top: 150px; */
+    font-weight: normal;
+}
+
+.p4-content {
+    left: 0px;
+    right: 0px;
+    display: block;
+    top: 1em;
+    text-align: justify;
+    width: 97%;
+    direction: rtl !important;
+}
+
+.p4-content h4, .p4-content h5, .p4-content h6 {
+    margin-bottom: 16px;
+}
+
+.p4-content p ,
+.p4-content li {
+    font-size: 16px;
+    color: #1f2326;
+    line-height: 1.7;
+}
+
+.content2 h1{
+    color:#413783;
+    font-size: 28px;
+    font-weight: bold;
+    float: right
+}
+.content3 h1{
+    color:#413783;
+    font-size: 35px;
+}
+
+.content2 img{
+    float: left;
+}
