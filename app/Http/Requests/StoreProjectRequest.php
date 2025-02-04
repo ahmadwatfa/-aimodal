@@ -22,14 +22,7 @@ class StoreProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'idea' => 'required|string|min:5|max:30',
-            'description' => 'required|string|min:5|max:255',
-            'type' => 'required|string|in:service,project,product',
-            'category' => 'required|string|min:3|max:10',
-            'location' => 'required|string|max:2',
-            'target_audience' => 'required|string|in:B2B,B2C,other',
-            'revenue_model' => 'required|string|in:subscribe,sale,free',
-            'keywords' => 'nullable|min:2|max:255',
+           
         ];
     }
 
