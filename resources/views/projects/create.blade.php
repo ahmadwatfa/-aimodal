@@ -31,32 +31,18 @@
                                         <div class="tab-pane active fade in" id="tab_1-1">
                                             <div class="row">
                                                 <div class="col-md-10">
-
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label class="col-sm-3 control-label">موجز الفكرة :</label>
-
-                                                            <input type="text" class="form-control col-sm-9"
-                                                                name="idea" value="{{ old('idea') }}"
-                                                                placeholder="الفكرة" data-fv-field="">
-                                                            @error('idea')
-                                                                <p class="text-danger">{{ $message }}</p>
-                                                            @enderror
-
-                                                        </div>
-                                                    </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label class="col-sm-3 control-label">تفاصيل الفكرة : </label>
-                                                            <textarea class="form-control col-sm-9" style="resize: none;" name="description"  
-                                                                id="" cols="30" rows="5" placeholder="تفاصيل الفكرة">{{ old('description') }}</textarea>
+                                                            <textarea class="form-control col-sm-9" style="resize: none;" name="description" id="" cols="30"
+                                                                rows="5" placeholder="تفاصيل الفكرة">{{ old('description') }}</textarea>
                                                             @error('description')
                                                                 <p class="text-danger">{{ $message }}</p>
                                                             @enderror
 
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-12">
+                                                    {{-- <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label for="type" class="col-sm-3 control-label">نوع
                                                                 الفكرة:</label>
@@ -68,8 +54,8 @@
                                                                 <option value="product">منتج</option>
                                                             </select>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-md-12">
+                                                    </div> --}}
+                                                    {{-- <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label for="category" class="col-sm-3 control-label">مجال
                                                                 الفكرة:</label>
@@ -77,7 +63,7 @@
                                                                 name="category" value="{{ old('category') }}"
                                                                 placeholder="مجال الفكرة" data-fv-field="">
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
 
                                                     <div class="col-md-12">
                                                         <div class="form-group">
@@ -92,40 +78,6 @@
                                                                     </option>
                                                                 @endforeach
                                                             </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="target_audience"
-                                                                class="col-sm-3 control-label">الجمهور المستهدف:</label>
-                                                            <select class="form-control col-sm-9" name="target_audience"
-                                                                id="target_audience" required>
-
-                                                                <option value="B2B">B2B</option>
-                                                                <option value="B2C">B2C</option>
-                                                                <option value="other">أخرى</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="revenue_model" class="col-sm-3 control-label">نموذج
-                                                                الإيرادات:</label>
-                                                            <select class="form-control col-sm-9" name="revenue_model"
-                                                                id="revenue_model" required>
-                                                                <option value="subscribe">نموذج الاشتراك</option>
-                                                                <option value="sale">مبيعات مباشرة</option>
-                                                                <option value="free">نموذج مجاني</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="keywords" class="col-sm-3 control-label">الكلمات
-                                                                المفتاحية (اختياري):</label>
-                                                            <input type="text" style="height: 45px;"
-                                                                class="form-control col-sm-9" name="keywords"
-                                                                id="keywords">
                                                         </div>
                                                     </div>
 
