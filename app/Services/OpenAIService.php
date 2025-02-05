@@ -21,7 +21,7 @@ class OpenAIService
         $client = new Client();
         foreach ($sections as $section) {
             $prompt = $section['content'];
-
+    
             try {
                 $response = Http::withHeaders([
                     'Authorization' => 'Bearer ' . $this->apiKey,
@@ -39,20 +39,33 @@ class OpenAIService
                     "top_p" => 1.0,
                     "frequency_penalty" => 0.52,
                     "presence_penalty" => 0.5,
-
                 ]);
 
                 $responseBody = json_decode($response->getBody(), true);
+               
                 $generatedText = $responseBody['choices'][0]['message']['content'];
-
+    
+                // استخراج JSON من النص باستخدام regex
+                preg_match('/\{(?:[^{}]|(?R))*\}/', $generatedText, $matches);
+                $jsonString = !empty($matches) ? $matches[0] : $generatedText;
+    
+                // التحقق من صحة JSON
+                $jsonArray = json_decode($jsonString, true);
+                if (json_last_error() !== JSON_ERROR_NONE) {
+                    throw new \Exception('Invalid JSON format from OpenAI');
+                }
+    
+                // تحويل إلى JSON string مع Unicode
+                $validJsonString = json_encode($jsonArray, JSON_UNESCAPED_UNICODE);
+    
                 ReportSection::where('project_id', $section['project_id'])
                     ->where('section_name', $section['section_name'])
                     ->update([
                         'completed' => true,
-                        'response_openai' => $generatedText,
+                        'response_openai' => $validJsonString,
                     ]);
+    
             } catch (\Exception $e) {
-
                 $responses[] = [
                     'section_name' => $section['section_name'],
                     'error' => $e->getMessage(),
@@ -60,4 +73,5 @@ class OpenAIService
             }
         }
     }
+    
 }
