@@ -85,7 +85,7 @@ class ProjectController extends Controller
                 'section_name' => 'problems_and_solutions',
                 'project_id' => $project->id,
                 'user_id' => Auth::user()->id,
-                'content' => "على شكل JSON، قم بكتابة **المشاكل والحلول** التي تواجه العملاء في مجال {$query} في {$location}.  
+                'content' => "على شكل JSON صالح فقط بدون أي نص إضافي أو تعليقات، قم بكتابة **المشاكل والحلول التي تواجه العملاء في {$query} في {$location}.  
         
                                      **المشاكل:**  
                              
